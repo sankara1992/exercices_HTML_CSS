@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        dl {
+            background-color: aqua;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            font-style: italic;
+        }
+
+        /* les styles pour les tableaux  */
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        
+        td, th {
+            border: 1px solid blue;
+            text-align: left;
+            padding: 8px;
+        }
+        /* even pair, odd impair */
+
+        tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        caption {
+            /* border: 1px solid blue  */
+            padding: 16px;
+            background-color: lightsalmon;
+            font-size: bolder;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1> tableau et une liste de définition</h1>
+
+    <dl>
+        <dt>Vacances</dt>
+           <dd>période de congés des personnes en activité.</dd>
+        <dt>Travail</dt>
+           <dd>Activité humaine organisée et utile. Ensemble de ces activités.</dd>
+    </dl>
+
+    <hr>
+
+    <h2> Des tableau</h2>
+    <table>
+        <tr>
+            <th>compagnie</th>
+            <th>contact</th>
+            <th>pays</th>
+            <th>Telephone</th>
+        </tr>
+        <tr>
+            <td>Auchan</td>
+            <td>M.<sup>me</sup> Auchan</td>
+            <td>France</td>
+            <td>06 24 52 88 30</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.carrefour.fr">Carrefour</a></td>
+            <td>M. Carrefour</td>
+            <td>France</td>
+            <td>07 20 22 00 00</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.lidl.fr/" title="le site de lidl" target="_blank">Lidl</a></td>
+            <td>Frau lidl</td>
+            <td>Allemagne</td>
+            <td>0033 7 52 45 66 44</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.e-leclerc.com/">Leclerc</a></td>
+            <td>Mr. Le couennec</td>
+            <td>France</td>
+            <td>00224 620 48 50 52</td>
+        </tr>
+        <tr>
+            <td>Picard</td>
+            <td>Mr. Picard</td>
+            <td>Bretagne</td>
+            <td>00224 628 80 75 45</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Un tableau avec fusion de colonnes</h2>
+    <table>
+        <!-- tr*2>td*3  -->
+        <tr>
+            <th>Nom</th>
+            <th colspan="2">Courriel</th>
+            
+            
+                
+        </tr>
+        <tr>
+            <td>Père Noël</td>
+            <td>papancel@polenord.pn</td>
+            <td>Santa-claus@noel.fr</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Un tableau avec fusion de rangées</h2>
+
+    <!-- table>tr*3>td*2  -->
+
+    <table>
+            <tr>
+                <th>Nom</th>
+                <th>Bill Gates</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Téléphone</td>
+                <td>06 56 59 58 54</td>
+            </tr>
+            <tr>
+                <td>06 56 59 58 54</td>
+                
+            </tr>
+            <tr>
+                <td>06 56 59 58 54</td>
+            </tr>
+            
+        
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Découper une page en logiques</h1>
+        <p> titre et le paragraphe sont dans l'en-tête</p>
+
+        <!--bien que ce ne soit pas obligatoire, on trouve dans l'en-tête un menu de navigation, le menu est parfois, dans sa balise nav après l'en-tête-->
+        <nav>
+            <!--ul>li*4>a-->
+            <ul>
+                <!-- une barre de recherche est un outil de navigation dans le site ; il est non l'inéaire (contrairement a la ul)-->
+                <!-- le formulaire de recherche du site-->
+                <li><a href="#">Navigation</a></li>
+                <li><a href="#">Qui sommes -nous ?</a></li>
+                <li><a href="#">Ce que nous faisons</a></li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+            <form action="#">
+                <input type="search" name="cherche" placeholder="recherchez">
+                <input type="submit" value="ok">
+
+            </form>
+        </nav>
+    </header>
+    <!-- voici le contenu princpal la balise MAIN, parfois un div id="main", ou div class="content"-->
+
+    <main>
+        <article>
+            <h2>Titre de niveau 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam inventore quaerat eaque repellat, error voluptatem, ab adipisci quis ut ipsam cumque nam ipsa, consequatur necessitatibus officiis aperiam voluptate? Officia, ut!</p>
+            <h3>titre de niveau 2</h3>
+            <p>autre paragraphe</p>
+        </article>
+        <article>
+            <h2>Titre de niveau 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facere ad odio iste impedit, exercitationem soluta et expedita? Repellat fugit, quo laboriosam cupiditate consequuntur fuga error magni earum repellendus maxime!</p>
+            <h3>titre de niveau 2</h3>
+            <p>autre paragraphe</p>
+        </article>
+        <!-- le contenu placé sur le côté peut être aussi dans le contenu principal -->
+        <aside>
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+                <li><a href="#">item 5</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <!-- et voici le pied de page principal utilisé sur les différentes pages du site -->
+        &COPY; : tout droit réservé toto.inc
+    </footer>
+    
+</body>
+</html>
